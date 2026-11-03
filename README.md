@@ -2,6 +2,12 @@
 
 A responsive marketplace where creators discover inspiring studios and hosts manage their spaces.
 
+**Live website:** https://studiospace-client-dusky.vercel.app
+
+**Client source:** https://github.com/shanajtech/studiospace-client
+
+**Server source:** https://github.com/shanajtech/studiospace-server
+
 ## Features
 - Three-slide homepage carousel, category discovery and six database-backed featured studios.
 - Search, category and hourly-price filters with sorting and pagination.
@@ -24,6 +30,13 @@ Use Node 22 or newer. Run `npm ci`, copy `.env.example` to `.env.local`, set `AP
 Import this repository into Vercel as a Next.js application. Set `API_ORIGIN` to the deployed Express server origin and rebuild whenever it changes. Configure the backend with the final frontend URL and Google callback. Confirm sign-in, refresh on private routes, image uploads and booking before submitting.
 
 ## Submission details
-The public live URL, repository URLs and examiner credentials must be added after the user's hosting accounts are connected and production deployment has been verified. Do not submit a localhost address as the live URL.
+The production frontend is hosted on Vercel and the Express backend is hosted on Render. MongoDB Atlas stores the application data.
+
+### Public examiner demo login
+
+- Email: examiner@studiospace.example
+- Password: supplied privately in the assignment submission notes.
+
+This is a demonstration account with ordinary user permissions. It contains only demonstration reservations; use a separate account for your own work. The host account and infrastructure credentials are private.
 
 Images: Unsplash. Seeded studios are demonstration listings. The application collects no payments and does not offer insurance or email recovery.
