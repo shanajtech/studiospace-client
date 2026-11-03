@@ -12,7 +12,7 @@ A responsive marketplace where creators discover inspiring studios and hosts man
 - A persistent light/dark theme, responsive layouts, skeleton loading, empty states and toast feedback.
 
 ## Stack
-Next.js App Router, TypeScript, React, Radix Dialog, Swiper, Sonner and Lucide. Express, MongoDB and Better Auth run in the separate server repository. API requests use a same-origin Next.js rewrite so HTTP-only cookies work consistently on refresh and across private pages.
+Next.js App Router, TypeScript, React, shadcn/ui-style Radix Dialog components, Swiper, Sonner and Lucide. Express, MongoDB and Better Auth run in the separate server repository. API requests use a same-origin Next.js rewrite so HTTP-only cookies work consistently on refresh and across private pages.
 
 ## Local setup
 Use Node 22 or newer. Run `npm ci`, copy `.env.example` to `.env.local`, set `API_ORIGIN=http://127.0.0.1:4000`, start the backend, and run `npm run dev`. Open `http://localhost:3000`. Use the same hostname in the backend's `CLIENT_ORIGIN` and `BETTER_AUTH_URL`.
