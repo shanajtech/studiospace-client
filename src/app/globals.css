@@ -69,3 +69,15 @@ select option:checked,select option:hover,select option:focus{background:#eeeae3
 .checkbox-grid label{padding:5px;margin:-5px;border-radius:5px}
 @media(max-width:800px){.main-nav{gap:8px;align-items:flex-start}.main-nav a{justify-content:flex-start;min-height:40px;margin-inline:0;padding:10px 14px}.main-nav a.active:after{left:calc(50% - 2px);right:auto;bottom:2px}}
 
+/* Filled orange CTAs keep their normal appearance on hover and press. */
+.button:not(.outline):not(.dark):not(.danger):not(:disabled):is(:hover,:focus-visible,:active){background:var(--orange);color:#fff;filter:none;transform:none;box-shadow:none}
+.profile-photo-field{border:0;padding:0;margin:0;min-width:0}
+.profile-photo-field legend{font-size:11px;font-weight:600;margin-bottom:10px}
+.profile-photo-field legend small{font-weight:400;color:var(--muted)}
+.profile-photo-controls{display:flex;align-items:center;gap:16px}
+.profile-photo-preview{display:grid;place-items:center;flex-shrink:0;width:66px;height:66px;border-radius:50%;background:var(--surface2);color:var(--muted);overflow:hidden}
+.profile-photo-preview img{width:100%;height:100%;object-fit:cover}
+.profile-photo-field .form-fineprint{text-align:left;margin-top:9px;overflow-wrap:anywhere}
+.profile-photo-field .form-error{margin-top:10px}
+.remove-profile-photo{display:flex;margin-top:8px;font-size:10px}
+
