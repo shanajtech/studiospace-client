@@ -56,3 +56,16 @@ select option:checked,select option:hover,select option:focus{background:#eeeae3
 
 @media(max-width:500px){.hero-secondary{padding:14px 17px;gap:12px;font-size:11px}}
 
+/* Give small links a comfortable, consistently shaped interaction area. */
+.main-nav a{display:inline-flex;align-items:center;justify-content:center;min-height:38px;padding:9px 12px;margin-inline:-12px;border-radius:6px}
+.main-nav a.active:after{bottom:2px}
+.account-nav a{display:inline-flex;align-items:center;min-height:36px;padding:7px 12px;margin-inline:-12px;border-radius:6px}
+.text-link,.card-bottom>a,.login-link,.auth-switch a,.form-fineprint a{display:inline-flex;align-items:center;padding:6px 9px;margin-inline:-9px;border-radius:6px}
+.footer-main>div>a:not(.brand){width:fit-content;min-height:32px;padding:6px 9px;margin-inline:-9px;border-radius:6px}
+.profile-menu a,.profile-menu>button{padding-inline:10px;border-radius:6px}
+.brand{padding:6px 8px;margin:-6px -8px;border-radius:6px}
+.socials a{display:inline-flex;align-items:center;justify-content:center;width:34px;height:34px;margin:-8px;border-radius:6px}
+.forgot-link{padding:6px 8px;border-radius:6px}
+.checkbox-grid label{padding:5px;margin:-5px;border-radius:5px}
+@media(max-width:800px){.main-nav{gap:8px;align-items:flex-start}.main-nav a{justify-content:flex-start;min-height:40px;margin-inline:0;padding:10px 14px}.main-nav a.active:after{left:calc(50% - 2px);right:auto;bottom:2px}}
+
