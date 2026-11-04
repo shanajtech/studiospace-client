@@ -15,6 +15,8 @@ A responsive marketplace where creators discover inspiring studios and hosts man
 - Studio galleries, amenities, host information, reviews and booking availability.
 - Private studio creation, integrated PostImage photo upload, editing and deletion with custom confirmation dialogs.
 - Reservation estimates, pending requests, guest cancellation and host booking management.
+- Heart buttons and a private Saved Studios wishlist persisted in MongoDB across sign-ins.
+- Downloadable PDF invoices for confirmed/completed bookings, restricted to the guest and host.
 - A persistent light/dark theme, responsive layouts, skeleton loading, empty states and toast feedback.
 
 ## Stack
