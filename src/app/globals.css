@@ -96,3 +96,8 @@ select option:checked,select option:hover,select option:focus{background:#eeeae3
 .auth-content:has(.auth-photo-picker){padding-top:100px}
 .auth-content>.eyebrow{display:flex;justify-content:center;align-items:center;width:100%;text-align:center;line-height:1.7}
 
+:root[data-theme=dark] .category-tile{background:#293b30;border-color:#506456;color:var(--ink)}
+:root[data-theme=dark] .category-tile p,:root[data-theme=dark] .category-tile>div>span{color:#c5cec3}
+:root[data-theme=dark] .category-tile:is(:hover,:focus-visible,:active){background:#394c3e;border-color:#718675;color:#f2f3ea}
+:root[data-theme=dark] .category-tile:is(:hover,:focus-visible,:active) p,:root[data-theme=dark] .category-tile:is(:hover,:focus-visible,:active)>div>span{color:#d9e2d7}
+
