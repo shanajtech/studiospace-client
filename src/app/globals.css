@@ -18,25 +18,25 @@
 .dialog-close{position:absolute;right:20px;top:20px}.modal-heading{padding-right:30px}
 .card-photo-wrap{position:relative}.save-studio-button{position:absolute;top:12px;right:12px;z-index:2;width:37px;height:37px;border-radius:50%;display:grid;place-items:center;border:1px solid #ffffff70;background:#fffef2;color:#293e33;box-shadow:0 2px 12px #0002}.save-studio-button[aria-pressed=true],.is-saved{color:var(--orange)}.save-studio-button:hover{background:#fff0e8}.detail-heading-actions{display:flex;align-items:center;gap:15px;flex-wrap:wrap}.saved-count{margin-bottom:25px}.reservation-bottom{flex-wrap:wrap;gap:13px}.account-nav{overflow-x:auto;white-space:nowrap}.reservation-bottom .button{gap:8px}
 
-/* Soft white interaction feedback; keep the original geometry and borders. */
-:root{--interaction-hover:color-mix(in srgb,#fff 72%,var(--surface2));--interaction-press:color-mix(in srgb,#fff 52%,var(--surface2))}
+/* Soft orange hover feedback, preserving existing borders. */
+:root{--interaction-hover:var(--orange-light);--interaction-press:color-mix(in srgb,var(--orange) 24%,var(--surface))}
 ::selection{background:#eeeae3;color:#212a25}
 a,button,select,.checkbox-grid label{transition:background-color .18s ease,color .18s ease,box-shadow .18s ease}
 a:not(.button):not(.card-image):not(.category-tile):is(:hover,:focus-visible),
 button:enabled:not(.button):not(.dropdown-dismiss):is(:hover,:focus-visible),
-select:enabled:is(:hover,:focus-visible),.checkbox-grid label:has(input:enabled):hover{background-color:var(--interaction-hover);color:#253a2f}
+select:enabled:is(:hover,:focus-visible),.checkbox-grid label:has(input:enabled):hover{background-color:var(--interaction-hover);color:var(--ink)}
 a:not(.button):not(.card-image):not(.category-tile):active,
 button:enabled:not(.button):not(.dropdown-dismiss):active,
-select:enabled:active{background-color:var(--interaction-press);color:#253a2f}
-.button:not(:disabled):is(:hover,:focus-visible){background:var(--interaction-hover);color:#253a2f;filter:none;transform:none;box-shadow:none}
-.button:not(:disabled):active{background:var(--interaction-press);color:#253a2f;transform:none;box-shadow:none}
-.hero-secondary{border-radius:6px;box-shadow:0 0 0 10px transparent}
-.hero-secondary:is(:hover,:focus-visible){background:var(--interaction-hover);box-shadow:0 0 0 10px var(--interaction-hover);color:#253a2f}
-.hero-secondary:active{background:var(--interaction-press);box-shadow:0 0 0 10px var(--interaction-press);color:#253a2f}
+select:enabled:active{background-color:var(--interaction-press);color:var(--ink)}
+.button:not(:disabled):is(:hover,:focus-visible){background:var(--interaction-hover);color:var(--ink);filter:none;transform:none;box-shadow:none}
+.button:not(:disabled):active{background:var(--interaction-press);color:var(--ink);transform:none;box-shadow:none}
+.hero-buttons{flex-wrap:wrap}.hero-secondary{display:inline-flex;padding:15px 23px;gap:18px;border:1px solid transparent;border-radius:6px;font-size:13px;font-weight:600;line-height:1.4}
+.hero-secondary:is(:hover,:focus-visible){background:var(--interaction-hover);box-shadow:none;color:var(--ink)}
+.hero-secondary:active{background:var(--interaction-press);box-shadow:none;color:var(--ink)}
 .category-tile:is(:hover,:focus-visible,:active){background:var(--interaction-hover);border-color:var(--line);color:#253a2f}
 .category-tile:is(:hover,:focus-visible,:active) p,.category-tile:is(:hover,:focus-visible,:active)>div>span{color:#62716a}
-.profile-menu a:is(:hover,:focus-visible),.profile-menu>button:enabled:is(:hover,:focus-visible){background:var(--interaction-hover);color:#253a2f}
-.category-pills button.selected:enabled:is(:hover,:focus-visible){background:var(--interaction-hover);color:#253a2f}
+.profile-menu a:is(:hover,:focus-visible),.profile-menu>button:enabled:is(:hover,:focus-visible){background:var(--interaction-hover);color:var(--ink)}
+.category-pills button.selected:enabled:is(:hover,:focus-visible){background:var(--interaction-hover);color:var(--ink)}
 .card-image:after{content:'';position:absolute;inset:0;border-radius:inherit;background:transparent;pointer-events:none;transition:background-color .18s}
 .card-image:is(:hover,:focus-visible):after{background:#ffffff1a}
 .card-image:active:after{background:#ffffff30}
@@ -53,4 +53,6 @@ select option:checked,select option:hover,select option:focus{background:#eeeae3
   select option:is(:checked,:hover,:focus){background:#eeeae3;color:#253a2f}
 }
 @media(prefers-reduced-motion:reduce){a,button,select,.card-image:after{transition:none}}
+
+@media(max-width:500px){.hero-secondary{padding:14px 17px;gap:12px;font-size:11px}}
 
