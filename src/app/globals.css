@@ -47,8 +47,10 @@ select option{background:var(--surface);color:var(--ink)}
 select option:checked,select option:hover,select option:focus{background:#eeeae3;color:#253a2f}
 @supports (appearance:base-select){
   select,select::picker(select){appearance:base-select}
+  select::picker-icon{content:'';display:block;width:8px;height:8px;border-right:1.6px solid currentColor;border-bottom:1.6px solid currentColor;transform:rotate(45deg);rotate:0deg;align-self:center;flex-shrink:0;margin-left:auto;margin-right:4px;translate:0 -2px}
   select::picker(select){background:var(--surface);color:var(--ink);border:1px solid var(--line);border-radius:6px;padding:5px;box-shadow:var(--shadow)}
   select option{padding:8px 12px;border-radius:4px}
   select option:is(:checked,:hover,:focus){background:#eeeae3;color:#253a2f}
 }
 @media(prefers-reduced-motion:reduce){a,button,select,.card-image:after{transition:none}}
+
