@@ -93,4 +93,6 @@ select option:checked,select option:hover,select option:focus{background:#eeeae3
 .auth-content .stack-form input{border:0;border-bottom:1px solid var(--line);border-radius:0;padding:12px 2px;background:transparent}.auth-content .password-field input{padding-right:43px}.auth-content .stack-form>.button{border-radius:6px 6px 30px 6px;min-height:48px}.auth-content .google-button{margin-top:24px}.auth-content .form-fineprint{margin-top:18px}
 @media(max-width:800px){.auth-layout{min-height:0;padding:0 0 20px}.auth-content{width:min(460px,calc(100% - 40px));margin:90px auto 32px;padding:78px 30px 32px}}
 @media(max-width:380px){.auth-content{padding-inline:22px;border-top-left-radius:56px;border-bottom-right-radius:56px}.auth-content h1{font-size:28px}}
+.auth-content:has(.auth-photo-picker){padding-top:100px}
+.auth-content>.eyebrow{display:flex;justify-content:center;align-items:center;width:100%;text-align:center;line-height:1.7}
 
